@@ -1,22 +1,27 @@
-import logo from '../../images/logo.svg';
+import { useEffect } from 'react';
 import './home.css';
+import data from '../../data.json';
 
 const Home = () => {
+  useEffect(() => {
+    console.log(data);
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a
-          className="App-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          href="http://google.com"
-        >
-          Satisfactory Architect (built in react v18.2)
-        </a>
-      </header>
+    <div className="home">
+      {data.map(nativeClass => (
+        <div key={nativeClass?.NativeClass}>
+          <h2>{nativeClass?.NativeClass}</h2>
+          {nativeClass?.Classes?.map(item => (
+            <div key={item?.ClassName}>
+              <h3>{item?.mDisplayName}</h3>
+              <p>{item?.mDescription}</p>
+            </div>
+          ))}
+        </div>
+      ))}
     </div>
   );
-}
+};
 
 export default Home;
