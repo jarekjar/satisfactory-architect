@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import './home.css';
-import data from '../../data.json';
+import data from '../../data/data.json';
 
 const Home = () => {
   useEffect(() => {
@@ -9,7 +9,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      {data.map(nativeClass => (
+      {/* {data.map(nativeClass => (
         <div key={nativeClass?.NativeClass}>
           <h2>{nativeClass?.NativeClass}</h2>
           {nativeClass?.Classes?.map(item => (
@@ -17,9 +17,9 @@ const Home = () => {
               <h3>{item?.mDisplayName}</h3>
               <p>{item?.mDescription}</p>
             </div>
-          ))}
+          ))} 
         </div>
-      ))}
+          ))}*/}
     </div>
   );
 };
