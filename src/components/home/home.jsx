@@ -8,18 +8,17 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="home">
-      {/* {data.map(nativeClass => (
-        <div key={nativeClass?.NativeClass}>
-          <h2>{nativeClass?.NativeClass}</h2>
-          {nativeClass?.Classes?.map(item => (
-            <div key={item?.ClassName}>
-              <h3>{item?.mDisplayName}</h3>
-              <p>{item?.mDescription}</p>
-            </div>
-          ))} 
+    <div className="">
+      {Object.entries(data.items).map(([className, item]) => (
+        <div className="item-container">
+          {console.log(className)}
+          <img className="item-icon" src={`/images/items/${item?.slug}_64.png`} alt={item?.slug}></img>
+          <div className="item-info-container">
+            <div className="item-title">{item?.name}</div>
+            <div className="item-description">{item?.description}</div>
+          </div>
         </div>
-          ))}*/}
+      ))}
     </div>
   );
 };
