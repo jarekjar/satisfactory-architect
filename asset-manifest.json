@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/satisfactory-architect/static/css/main.89e8605a.css",
-    "main.js": "/satisfactory-architect/static/js/main.27882b87.js",
-    "static/js/787.543f8241.chunk.js": "/satisfactory-architect/static/js/787.543f8241.chunk.js",
+    "main.css": "/satisfactory-architect/static/css/main.3d924821.css",
+    "main.js": "/satisfactory-architect/static/js/main.4450935b.js",
+    "static/js/787.2bd127f4.chunk.js": "/satisfactory-architect/static/js/787.2bd127f4.chunk.js",
     "index.html": "/satisfactory-architect/index.html",
-    "main.89e8605a.css.map": "/satisfactory-architect/static/css/main.89e8605a.css.map",
-    "main.27882b87.js.map": "/satisfactory-architect/static/js/main.27882b87.js.map",
-    "787.543f8241.chunk.js.map": "/satisfactory-architect/static/js/787.543f8241.chunk.js.map"
+    "main.3d924821.css.map": "/satisfactory-architect/static/css/main.3d924821.css.map",
+    "main.4450935b.js.map": "/satisfactory-architect/static/js/main.4450935b.js.map",
+    "787.2bd127f4.chunk.js.map": "/satisfactory-architect/static/js/787.2bd127f4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89e8605a.css",
-    "static/js/main.27882b87.js"
+    "static/css/main.3d924821.css",
+    "static/js/main.4450935b.js"
   ]
 }
