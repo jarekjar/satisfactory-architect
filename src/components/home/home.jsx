@@ -9,10 +9,11 @@ const Home = () => {
 
   return (
     <div className="">
+        <h1 className="home">Satisfactory Architect</h1>
       {Object.entries(data.items).map(([className, item]) => (
-        <div className="item-container">
+        <div className="item-container" key={className}>
           {console.log(className)}
-          <img className="item-icon" src={`/images/items/${item?.slug}_64.png`} alt={item?.slug}></img>
+          <img className="item-icon" src={process.env.PUBLIC_URL + `/images/${item?.slug}_64.png`} alt={item?.slug}></img>
           <div className="item-info-container">
             <div className="item-title">{item?.name}</div>
             <div className="item-description">{item?.description}</div>
