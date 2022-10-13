@@ -12,9 +12,9 @@ const ItemList = ({data}) => {
         width: '100%',
         bgcolor: 'background.paper',
       }}>
-      {Object.entries(data?.items).map(([className, item]) => (
+      {data?.map((item, i) => (
         <>
-        <ListItem key={className}>
+        <ListItem key={i}>
           <ListItemAvatar>
             <div className="item-icon">
               <img src={process.env.PUBLIC_URL + `/images/${item?.slug}_64.png`} alt={item?.slug} />
